@@ -32,7 +32,7 @@
  			$password = $_POST['password'];
  			$level = $_POST['level'];
  			$fullname = $_POST['fullname'];
- 			$tambah = mysqli_query($conn, "INSERT INTO data(id,username,password,level,fullname)VALUES('$id','$username','$password','$level','$fullname')");
+ 			$tambah = mysqli_query($conn, "INSERT INTO users(id,username,password,level,fullname)VALUES('$id','$username','$password','$level','$fullname')");
  		if ($tambah) {
  			?>
  			<script type="text/javascript">
